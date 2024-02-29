@@ -1,5 +1,8 @@
 %importation des packages
-\documentclass[11pt,oneside,DIV=calc,parskip=half]{scrbook}
+\RequirePackage{pdfmanagement-testphase}
+\DocumentMetadata {lang=fr}
+\documentclass[fontsize=11pt,twoside=true,DIV=calc,parskip=half]{scrbook}
+\usepackage{scrhack}
 \usepackage{scrlayer-scrpage} %équivalent de fancyhdr pour kommascript
 \usepackage[french]{babel}
 \usepackage[babel=true]{csquotes} % csquotes va utiliser la langue définie dans babel
@@ -85,8 +88,8 @@
 \setlength{\parindent}{0pt} %pas de retrait en début de paragraphe
 %\setlength{\parskip}{13pt}
 \usepackage{caption}%mise en forme des légendes des figures
-\addtokomafont{caption}{\scriptsize \itshape}
-\addtokomafont{captionlabel}{\scriptsize \itshape}
+\addtokomafont{caption}{\scriptsize \slshape}
+\addtokomafont{captionlabel}{\scriptsize \slshape}
 
 %pieds de page utiliser scrlayer-scrpage
 \setkomafont{pageheadfoot}{\small}
